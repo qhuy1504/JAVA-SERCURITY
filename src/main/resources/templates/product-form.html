@@ -1,0 +1,147 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
+<html>
+<style>
+.text-succes{
+font-size: 20px;
+color: green;
+font-weight: bold;
+
+}
+.text-error{
+font-size: 20px;
+color: red;
+font-weight: bold;
+
+}
+.text-error2{
+font-size: 16px;
+color: red;
+font-weight: bold;
+
+}
+.container{
+margin: 0 auto;
+padding: 10px;
+align-items: center;
+}
+div{
+margin-bottom: 10px;
+}
+
+</style>
+<head>
+<meta charset="UTF-8">
+<title>Thêm mới sản phẩm</title>
+</head>
+<body>
+<div class = "container">
+		<h1 th:text = "${product.id != null && product.id > 0 ? 'Cập nhật sản phẩm' : 'Thêm sản phẩm mới'}">Thêm sản phẩm mới</h1>
+		<div th:if = "${param.success}">
+			<div class = "text-succes">Bạn đã thao tác thành công</div>
+		</div>
+		<div th:if = "${param.error}">
+			<div class = "text-error">Lỗi: Không tìm thấy ID</div>
+		</div>
+		<form method = "post" th:action = "@{/products/add}" th:object = "${product}">
+		<input type = "hidden" th:field = "*{id}"/>
+		
+		
+		<div>
+		<label for = "code">Mã sản phẩm (code): </label>
+		<input type = "text" id = "code" th:field = "*{code}" required/>
+		<p th:errors = "*{code}" class = "text-error2" th:if = "${#fields.hasErrors('code')}"></p>
+		
+		</div>
+		
+			<div>
+		<label for = "name">Tên sản phẩm: </label>
+		<input type = "text" id = "name" th:field = "*{name}" required/>
+		<p th:errors = "*{name}" class = "text-error2" th:if = "${#fields.hasErrors('name')}"></p>
+		
+		</div>
+		
+			<div>
+		<label for = "description">Mô tả: </label>
+		<textarea type = "text" id = "description" th:field = "*{description}" required></textarea>
+		<p th:errors = "*{description}" class = "text-error2" th:if = "${#fields.hasErrors('description')}"></p>
+		
+		</div>
+		
+			<div>
+		<label for = "price">Giá: </label>
+		<input type = "text" id = "price" th:field = "*{price}" required/>
+		<p th:errors = "*{price}" class = "text-error2" th:if = "${#fields.hasErrors('price')}"></p>
+		
+		</div>
+		
+			<div>
+		<label for = "registerDate">Ngày đăng ký: </label>
+		<input type = "date" id = "registerDate" th:field = "*{registerDate}" required/>
+		<p th:errors = "*{registerDate}" class = "text-error2" th:if = "${#fields.hasErrors('registerDate')}"></p>
+		
+		</div>
+		
+		<div>
+		<label>Trạng thái: </label>
+		
+		<div>
+		<input type = "radio" id = "activeYes" name = "isActive" value = "true"
+		th:field = "*{isActive}"
+		th:checked = "*{isActive == true}"
+		/>
+		<label>Yes</label>
+		</div>
+		
+		<div>
+		<input type = "radio" id = "activeNo" name = "isActive" value = "false"
+		th:field = "*{isActive}"
+		th:checked = "*{isActive == false}"
+		/>
+		<label>No</label>
+		</div>
+		
+		<p th:errors = "*{isActive}" class = "text-error2" th:if = "${#fields.hasErrors('isActive')}"></p>
+		
+		
+		</div>
+		
+		<!-- -Loại sản phẩm--->
+		
+		<div>
+		<label for = "categoryID">Loại sản phẩm: </label>
+		<select id = "categoryID" th:field = "*{categoryID}">
+		<option value = "" disabled selected>Chọn loại sản phẩm </option>
+		<option th:each = "category: ${categories}"
+				th:value = "${category.id}"
+				th:text = "${category.name}"> </option>
+		
+		</select>
+			<p th:errors = "*{categoryID}" class = "text-error2" th:if = "${#fields.hasErrors('categoryID')}"></p>
+		
+		</div>
+		
+			<div>
+		<label for = "image">Hình ảnh: </label>
+		<input type = "file" id = "image" th:field = "*{image}" required/>
+		<p th:errors = "*{image}" class = "text-error2" th:if = "${#fields.hasErrors('image')}"></p>
+		
+		</div>
+		
+		<div>
+			<button type = "submit" th:text = "${product.id != null && product.id > 0 ? 'Cập nhật' : 'Lưu mới'}"></button>
+			<a th:href = "@{/products}">
+			<button type = "button">Quay lại</button>
+			
+			</a>
+		</div>
+		
+		
+		
+		</form>
+		
+		
+	</div>	
+		
+</body>
+</html>

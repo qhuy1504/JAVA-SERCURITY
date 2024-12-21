@@ -1,0 +1,84 @@
+2024-12-21T12:51:57.064+07:00  INFO 18552 --- [QuanLySanPham] [restartedMain] iuh.fit.se.QuanLySanPhamApplication      : Starting QuanLySanPhamApplication using Java 17.0.9 with PID 18552 (F:\Spring tool suite\workspace\QuanLySanPham\target\classes started by QUOC HUY in F:\Spring tool suite\workspace\QuanLySanPham)
+2024-12-21T12:51:57.072+07:00  INFO 18552 --- [QuanLySanPham] [restartedMain] iuh.fit.se.QuanLySanPhamApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-12-21T12:51:57.115+07:00  INFO 18552 --- [QuanLySanPham] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-21T12:51:57.115+07:00  INFO 18552 --- [QuanLySanPham] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-21T12:51:57.921+07:00  INFO 18552 --- [QuanLySanPham] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-21T12:51:57.976+07:00  INFO 18552 --- [QuanLySanPham] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2024-12-21T12:51:58.725+07:00  INFO 18552 --- [QuanLySanPham] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-12-21T12:51:58.743+07:00  INFO 18552 --- [QuanLySanPham] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-21T12:51:58.744+07:00  INFO 18552 --- [QuanLySanPham] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-21T12:51:58.981+07:00  INFO 18552 --- [QuanLySanPham] [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-21T12:51:58.993+07:00  INFO 18552 --- [QuanLySanPham] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-21T12:51:58.993+07:00  INFO 18552 --- [QuanLySanPham] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1877 ms
+2024-12-21T12:51:59.586+07:00  INFO 18552 --- [QuanLySanPham] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-21T12:51:59.623+07:00  INFO 18552 --- [QuanLySanPham] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-21T12:51:59.727+07:00  INFO 18552 --- [QuanLySanPham] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@545a8a5a
+2024-12-21T12:51:59.729+07:00  INFO 18552 --- [QuanLySanPham] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-21T12:52:00.463+07:00  INFO 18552 --- [QuanLySanPham] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-21T12:52:00.654+07:00  INFO 18552 --- [QuanLySanPham] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-21T12:52:00.875+07:00  WARN 18552 --- [QuanLySanPham] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-21T12:52:00.967+07:00  INFO 18552 --- [QuanLySanPham] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-12-21T12:52:01.245+07:00 DEBUG 18552 --- [QuanLySanPham] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2024-12-21T12:52:01.391+07:00 DEBUG 18552 --- [QuanLySanPham] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /api/explorer/**] in 'resourceHandlerMapping'
+2024-12-21T12:52:01.631+07:00 DEBUG 18552 --- [QuanLySanPham] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-21T12:52:01.692+07:00 DEBUG 18552 --- [QuanLySanPham] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-21T12:52:01.712+07:00 DEBUG 18552 --- [QuanLySanPham] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-12-21T12:52:01.867+07:00  INFO 18552 --- [QuanLySanPham] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-21T12:52:01.904+07:00  INFO 18552 --- [QuanLySanPham] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-12-21T12:52:01.914+07:00  INFO 18552 --- [QuanLySanPham] [restartedMain] iuh.fit.se.QuanLySanPhamApplication      : Started QuanLySanPhamApplication in 5.293 seconds (process running for 5.717)
+2024-12-21T12:52:01.918+07:00  INFO 18552 --- [QuanLySanPham] [restartedMain] iuh.fit.se.QuanLySanPhamApplication      : QuanLySanPhamApplication Start
+2024-12-21T12:52:06.982+07:00  INFO 18552 --- [QuanLySanPham] [http-nio-9998-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-21T12:52:06.982+07:00  INFO 18552 --- [QuanLySanPham] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-21T12:52:06.982+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-21T12:52:06.982+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-21T12:52:06.984+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-21T12:52:06.984+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7dcaaf95
+2024-12-21T12:52:06.985+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3cf31418
+2024-12-21T12:52:06.985+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-21T12:52:06.985+07:00  INFO 18552 --- [QuanLySanPham] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-12-21T12:52:07.195+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2024-12-21T12:52:07.197+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-21T12:52:07.201+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-12-21T12:52:07.205+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-12-21T12:52:07.207+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-12-21T12:52:07.213+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-12-21T12:52:07.213+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-12-21T12:52:07.232+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/yaml]
+2024-12-21T12:52:07.234+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sat Dec 21 12:52:07 ICT 2024, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2024-12-21T12:52:07.269+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-12-21T12:52:10.393+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/products", parameters={}
+2024-12-21T12:52:10.393+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to iuh.fit.se.controllers.ProductController#getAllProducts(ProductDTO, BindingResult, Model)
+2024-12-21T12:52:10.526+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-12-21T12:52:10.731+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-21T12:52:10.749+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/image/1.png", parameters={}
+2024-12-21T12:52:10.749+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/image/2.png", parameters={}
+2024-12-21T12:52:10.749+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-21T12:52:10.750+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-21T12:52:10.755+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-21T12:52:10.755+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-21T12:52:10.758+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/image/4.png", parameters={}
+2024-12-21T12:52:10.758+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/image/3.png", parameters={}
+2024-12-21T12:52:10.759+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-21T12:52:10.759+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-21T12:52:10.763+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-21T12:52:10.763+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-21T12:52:23.146+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/products/add", parameters={}
+2024-12-21T12:52:23.146+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to iuh.fit.se.controllers.ProductController#showForm(Integer, Model)
+2024-12-21T12:52:23.150+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-12-21T12:52:23.180+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-21T12:52:45.973+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/products", parameters={}
+2024-12-21T12:52:45.973+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to iuh.fit.se.controllers.ProductController#getAllProducts(ProductDTO, BindingResult, Model)
+2024-12-21T12:52:45.982+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2024-12-21T12:52:45.992+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-21T12:52:46.011+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/image/1.png", parameters={}
+2024-12-21T12:52:46.013+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-21T12:52:46.015+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/image/2.png", parameters={}
+2024-12-21T12:52:46.016+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-21T12:52:46.017+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-21T12:52:46.019+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-21T12:52:46.022+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/image/3.png", parameters={}
+2024-12-21T12:52:46.023+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/image/4.png", parameters={}
+2024-12-21T12:52:46.024+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-21T12:52:46.024+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-21T12:52:46.026+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-21T12:52:46.026+07:00 DEBUG 18552 --- [QuanLySanPham] [http-nio-9998-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK

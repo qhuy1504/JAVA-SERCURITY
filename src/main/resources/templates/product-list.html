@@ -1,0 +1,167 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
+<html>
+<style>
+.container{
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+}
+table{
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th,td {
+border: 1px solid black;
+padding: 5px;
+text-align: center;
+}
+th{
+    background-color: #f2f2f2;
+    font-weight: bold;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: blue;
+}
+.button-2{
+background-color: green;
+padding: 10px 20px;
+text-align: center;
+font-size: 16px;
+color: white;
+margin-top: 10px;
+
+}
+
+</style>
+<head>
+<meta charset="UTF-8">
+
+<title>Danh sách sản phẩm</title>
+</head>
+<body>
+		<div class = "container">
+		
+		
+		
+		<form action = "/products/search" method = "get">
+		<input type = "text" name = "keyword" placeholder = "Nhạp từ khóa tìm kiếm" value = ""/>
+		
+		<br><br><br>
+		
+		<!-- Loại sản phẩm -->
+		<form th:action = "@{/products}" th:object = "${product}" method = "get">
+		
+		<label for = "categoryID">Category: </label>
+		<select th:field = "*{categoryID}">
+		<option value = "" selected>-- Chọn loại sản phẩm --</option>
+		<option th:each = "category : ${categories}"
+		th:value = "${category.id}"
+		th:text = "${category.name}"
+		>Category
+		
+		</option>
+		
+		</select>
+		
+		<div>
+	<label>Trạng thái: </label>
+		
+		<div>
+		<input type = "radio" id = "activeYes" name = "isActive" value = "true"
+		th:field = "*{isActive}"
+		th:checked = "*{isActive == true}"
+		/>
+		<label>Hoạt động</label>
+		</div>
+		
+		<div>
+		<input type = "radio" id = "activeNo" name = "isActive" value = "false"
+		th:field = "*{isActive}"
+		th:checked = "*{isActive == false}"
+		/>
+		<label>Không hoạt động</label>
+		</div>
+		
+		</div>
+		
+		<!-- Ngày đăng ký -->
+		<div>
+		<label for = "registerDate">Chọn ngày bắt đầu tìm kiếm - now: </label>
+		<input type = "date" id ="registerDate" th:field="*{registerDate}"/>
+		</div>
+		
+		<div>
+		<button type = "submit">Tìm kiếm</button>
+		</div>
+		
+		
+		
+		</form>
+		
+		
+		</form>
+		
+		<form th:action = "@{/products/add}" method = "get">
+		<button type = "submit" class = "button-2">Thêm mới</button>
+		</form>
+		
+		
+		
+			<h2>Danh sách sản phẩm</h2>
+			
+			
+			<table>
+			<thead>
+			<tr>
+				<th>ID</th>
+				<th>Mã sản phẩm</th>
+				<th>Tên sản phẩm</th>
+				<th>Giá</th>
+				<th>Mô tả</th>
+				<th>Trạng thái</th>
+				<th>Ngày đăng ký</th>
+				<th>Thể loại</th>
+				<th>Hình ảnh</th>
+				<th>Chức năng</th>
+			</tr>
+			
+			</thead>
+			<tbody>
+			<tr th:each = "product : ${products}">
+			<td th:text = "${product.id}"></td>
+			<td th:text = "${product.code}"></td>
+			<td th:text = "${product.name}"></td>
+				<td th:text = "${product.price}"></td>
+			<td th:text = "${product.description}"></td>
+			<td th:text = "${product.isActive ? 'Đang hoạt động' : 'Không còn hoạt động'}"></td>
+			<td th:text = "${product.registerDate}"></td>
+			<td th:text = "${product.categoryID.name}"></td>
+		<td>
+    		<img th:src="@{|/image/${product.image}|}" alt="Product Image" style="width: 100px; height: auto;">
+		</td>
+			<td>
+			<a th:href = "@{/products/edit/{id}(id=${product.id})}">Sửa</a> | 
+			<a th:href = "@{/products/delete/{id}(id=${product.id})}" onclick = "return confirm ('Bạn có chắc chắn muốn xóa ?')">Xóa</a>
+			
+			</td>
+			
+			
+			
+			</tr>
+			
+			</tbody>
+			
+			</table>
+		
+		</div>
+
+
+</body>
+</html>
